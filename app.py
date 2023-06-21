@@ -142,20 +142,6 @@ def predict_full(model, text, melody, duration, topk, topp, temperature, cfg_coe
 
 
 def ui_full(launch_kwargs):
-  with open('/content/drive/MyDrive/flower/untitled') as f:
-    read_data=f.read()
-    a=read_data.split()
-    print(a[0])#这一行可以单独打印第几个字符串
-    if a[0] == "tulip":
-      b = "romantic and fancy"
-    elif a[0] == "dandelion":
-      b = "free and relaxing"
-    elif a[0] == "daisy":
-      b = "peace and happy"
-    else:
-      b = "unknown"
-    print(b)#这一行可以单独打印第几个字符串
-    f.closed
     with gr.Blocks() as interface:
         gr.Markdown(
             """
