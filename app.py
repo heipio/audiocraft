@@ -142,6 +142,20 @@ def predict_full(model, text, melody, duration, topk, topp, temperature, cfg_coe
 
 
 def ui_full(launch_kwargs):
+    with open('/content/drive/MyDrive/flower/untitled') as f:
+        read_data=f.read()
+        a=read_data.split()
+        print(a[0])#这一行可以单独打印第几个字符串
+        if a[0] == "tulip":
+          b = "romantic and fancy"
+        elif a[0] == "dandelion":
+          b = "free and relaxing"
+        elif a[0] == "daisy":
+          b = "peace and happy"
+        else:
+          b = "unknown"
+        print(b)#这一行可以单独打印第几个字符串
+        f.closed
     with gr.Blocks() as interface:
         gr.Markdown(
             """
@@ -153,7 +167,7 @@ def ui_full(launch_kwargs):
         with gr.Row():
             with gr.Column():
                 with gr.Row():
-                    text = gr.Text(placeholder="happy and sweet",value="happy and sweet",label="Input Text", interactive=True)
+                    text = gr.Text(placeholder=b,value=b,label="Input Text", interactive=True)
                     melody = gr.Audio(source="upload", type="numpy", label="Melody Condition (optional)", interactive=True)
                 with gr.Row():
                     submit = gr.Button("Submit")
