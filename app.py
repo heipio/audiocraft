@@ -251,7 +251,7 @@ def ui_batched(launch_kwargs):
         with gr.Row():
             with gr.Column():
                 with gr.Row():
-                    text = gr.Text(label="Describe your music", lines=2, interactive=True)
+                    text = gr.Text(placeholder="happy and sweet",value="happy and sweet",label="Describe your music", lines=2, interactive=True)
                     melody = gr.Audio(source="upload", type="numpy", label="Condition on a melody (optional)", interactive=True)
                 with gr.Row():
                     submit = gr.Button("Generate")
