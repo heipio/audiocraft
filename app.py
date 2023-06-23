@@ -152,9 +152,9 @@ def ui_full(launch_kwargs):
       b = "free and relaxing"
     elif a[0] == "daisy":
       b = "peace and happy"
-    elif a[0] == "tulip"
+    elif a[0] == "tulip":
       b = "elegant and pure"
-    elif a[0] == "sunflower"
+    elif a[0] == "sunflower":
       b = "warm and adoring"
     else:
       b = "unknown"
