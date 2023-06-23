@@ -146,12 +146,16 @@ def ui_full(launch_kwargs):
     read_data=f.read()
     a=read_data.split()
     print(a[0])#这一行可以单独打印第几个字符串
-    if a[0] == "tulip":
-      b = "romantic and fancy"
+    if a[0] == "rose":
+      b = "romantic and enthusiastic"
     elif a[0] == "dandelion":
       b = "free and relaxing"
     elif a[0] == "daisy":
       b = "peace and happy"
+    elif a[0] == "tulip"
+      b = "elegant and pure"
+    elif a[0] == "sunflower"
+      b = "warm and adoring"
     else:
       b = "unknown"
     print(b)#这一行可以单独打印第几个字符串
